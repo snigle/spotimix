@@ -1,5 +1,6 @@
 module.exports = {
   assetsDir : "assets",
+  publicPath: "/spotimix/dist/",
   css: {
     loaderOptions: {
       css: {
