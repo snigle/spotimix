@@ -155,8 +155,9 @@ import draggable from "vuedraggable";
 import { GetPlaylistItemsResponse } from "spotify-web-api-ts/types/types/SpotifyResponses";
 import moment from "moment";
 
-const client_id = "adc341012eea48f581d67ff19d55b250"; // Your client id
-const redirect_uri = location.href; // Your redirect uri
+const client_id = "adc341012eea48f581d67ff19d55b250";
+const url = new URL(location.href);
+const redirect_uri = url.protocol + "//" + url.hostname + url.pathname;
 const scopes =
   "user-read-private user-read-email user-library-read playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative user-library-modify user-library-read user-read-recently-played user-top-read user-read-playback-position user-top-read user-read-playback-position user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control streaming";
 
