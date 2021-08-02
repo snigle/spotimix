@@ -668,4 +668,7 @@ input[type="number"].form-control {
     color: white;
   }
 }
+input {
+  color: black
+}
 </style>

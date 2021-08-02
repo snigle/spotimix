@@ -98,7 +98,7 @@ get currentIndex(): number {
     console.log("found song", song);
     const div = document.createElement("div");
     div.innerHTML = song.embed_content
-      .replace(`src='//`, `src='http://`)
+      .replace(`src='//`, `src='${location.protocol}//`)
       .trim();
     // console.log(div.innerHTML);
     // console.log(song.embed_content)
